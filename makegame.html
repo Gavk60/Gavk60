@@ -1,0 +1,159 @@
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script>
+ 
+</script>
+</head>
+<style>
+
+h1 { text-align: center;
+
+}
+
+ #logo 
+ {
+ 	width: 15%;
+ 	height: 23%;
+ 	align-items:center;
+ 	text-align: center;
+ 	position: relative;
+ 	top: -115px;
+ 	display: inline-block;
+
+ }
+
+
+body {
+	display: inline-block;
+	text-align: center;
+		align-items: center;
+	background-image: url("photo.jpeg"); 
+	 background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+}
+
+.button 
+{
+	position: relative;
+	display: inline-block;
+
+}
+.theform
+{
+	
+	padding: 10px;
+	color: white;
+	text-align: center;
+	align-items: center;
+	position: fixed;
+	 display: inline-block;
+    width:905px; 
+    margin:0 auto;
+ 
+
+}
+
+</style>
+
+
+
+
+
+
+<div style="background-color:yellow;color:black;padding:50px;">
+ 
+ 
+</div>
+<img src = "pick-app.png" id = "logo"><img>
+<body>
+<div class = "theform">
+
+
+<button  type="button" class="btn btn-primary" onclick="buttonfunction()" style="font-size : 15px;"> Get Location </button> <br>
+<br>
+  Sport: <input type="text" name="formsport" style="color:black"><br> <br>
+  Time: <input type="text" name="formtime" style="color:black"><br> <br>
+  Duration: <input type="text" name="formduration" style="color:black"> <br> <br>
+  <button  type="button" class="btn btn-primary" onclick="storeVars()" style="font-size : 25px;"> Make game </button>
+
+
+
+<p id = "madeheader"></p> <br>
+<p id = "createdsport"></p> <br>
+<p id = "createdtime"></p> <br>
+<p id = "createdduration"></p> <br>
+
+</div>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!--
+<table class= "table table-bordered" style="color:white">
+	<tbody>
+{{#each g in gameData}}
+	<tr>	
+	
+		<td>{{g.Sport}}</td><td>{{g.Time}}</td><td>{{g.Duration}}</td>
+		
+	</tr>	
+	{{/each}}
+
+	</tbody>
+	</table>
+	-->
+	</body>
+<script>
+	//gameInfo = new Meteor.Collection('gameinfo');
+
+	var sport = document.getElementById('formsport').value;
+	var time = document.getElementById('formtime').value;
+	var duration =document.getElementById('formduration').value;
+function storeVars()
+{
+
+	
+   
+   // console.log(sport);console.log(time);console.log(duration)
+    //const gamestuff = {Sport: sport, Time: time, Duration:duration}
+ //console.dir(gamestuff);
+ //gameInfo.insert(gamestuff);
+ 
+ //document.getElementById("madeheader").innerHTML = "You made a game!"
+ //document.getElementById("createdsport").innerHTML = sport;
+ //document.getElementById("createdtime").innerHTML = time;
+ //document.getElementById("created duration").innerHTML = duration;
+
+}
+
+
+
+//Template.makegame.helpers({
+	//gameData: gamestuff
+//})
+
+</script>
+
+
+
+</html>
+
+
